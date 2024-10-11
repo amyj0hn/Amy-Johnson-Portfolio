@@ -308,3 +308,24 @@
 
 
 }());
+//   <title>Hidden Section</title>
+//   <style>
+//     /* CSS to hide the section by default */
+//     #hidden-section {
+//       display: none;
+//       margin-top: 10px;
+//       padding: 10px;
+//       border: 1px solid #ddd;
+//       background-color: #f9f9f9;
+//     }
+//   </style>
+
+    // JavaScript function to toggle the visibility
+    function toggleSection() {
+      const section = document.getElementById('hidden-section');
+      if (section.style.display === 'none' || section.style.display === '') {
+        section.style.display = 'block';  // Show the section
+      } else {
+        section.style.display = 'none';  // Hide the section
+      }
+    }
